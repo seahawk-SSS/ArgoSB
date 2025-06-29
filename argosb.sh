@@ -1,4 +1,4 @@
-#!/bin/sh
+/bin/sh
 export LANG=en_US.UTF-8
 if ! find /proc/*/exe -type l 2>/dev/null | grep -E '/proc/[0-9]+/exe' | xargs -r readlink 2>/dev/null | grep -q 'agsb/s' && ! pgrep -f 'agsb/s' >/dev/null 2>&1; then
 [ -z "${vlpt+x}" ] || vlp=yes
